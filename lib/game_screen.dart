@@ -145,6 +145,7 @@ class _GameScreenState extends State<GameScreen> {
                           controller.clear();
                         }
                         clear = true;
+                        secretNumber = generateRandom4DigitNumber();
                         setState(() {});
                       },
                       child: Container(
