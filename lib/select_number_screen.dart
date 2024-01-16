@@ -1,3 +1,4 @@
+import 'package:bull_and_cow_game/game_screen.dart';
 import 'package:flutter/material.dart';
 
 class SelectNumberScreen extends StatelessWidget {
@@ -14,12 +15,13 @@ class SelectNumberScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Text('Select any one card',
+            const Text('Select any one Card',
                 style: TextStyle(
+                  letterSpacing: 3.0,
                   fontWeight: FontWeight.bold,
                   fontSize: 20,
                 )),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             Container(
               margin: const EdgeInsets.all(15),
               child: GridView.builder(
@@ -31,29 +33,41 @@ class SelectNumberScreen extends StatelessWidget {
                   mainAxisSpacing: 60,
                 ),
                 itemBuilder: (context, index) {
-                  return Container(
-                    alignment: Alignment.center,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(8.0),
-                        border: Border.all(color: Colors.black),
-                        color: Colors.white,
-                        boxShadow: const [
-                          BoxShadow(
-                            color: Colors.grey,
-                            offset: Offset(3.0, 3.0),
-                            spreadRadius: 1.0,
-                            blurRadius: 2.0,
-                          )
-                        ],
-                        gradient: const LinearGradient(colors: [
-                          Colors.amber,
-                          Colors.yellow,
-                        ])),
-                    child: Text('${index + 1}',
-                        style: const TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 20,
-                        )),
+                  return InkWell(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) {
+                            return GameScreen();
+                          },
+                        ),
+                      );
+                    },
+                    child: Container(
+                      alignment: Alignment.center,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(8.0),
+                          border: Border.all(color: Colors.black),
+                          color: Colors.white,
+                          boxShadow: const [
+                            BoxShadow(
+                              color: Colors.grey,
+                              offset: Offset(3.0, 3.0),
+                              spreadRadius: 1.0,
+                              blurRadius: 2.0,
+                            )
+                          ],
+                          gradient: const LinearGradient(colors: [
+                            Colors.amber,
+                            Colors.yellow,
+                          ])),
+                      child: Text('${index + 1}',
+                          style: const TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 20,
+                          )),
+                    ),
                   );
                 },
               ),
