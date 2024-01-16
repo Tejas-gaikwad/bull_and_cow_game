@@ -30,9 +30,9 @@ Bulls and Cows is a classic code-breaking game where players attempt to guess a 
 
 ## Screenshots
 
-![image](https://github.com/Tejas-gaikwad/bull_and_cow_game/assets/46574484/81a658b5-0787-4138-ac03-9aea3a5aea12)
-![image](https://github.com/Tejas-gaikwad/bull_and_cow_game/assets/46574484/681f9654-b98b-49e0-a760-9456697b8b37)
-![image](https://github.com/Tejas-gaikwad/bull_and_cow_game/assets/46574484/f157427c-1e02-4bac-8f8b-6a800fa354e7)
+<img src="https://github.com/Tejas-gaikwad/bull_and_cow_game/assets/46574484/81a658b5-0787-4138-ac03-9aea3a5aea12", height="200"/>
+<img src="https://github.com/Tejas-gaikwad/bull_and_cow_game/assets/46574484/681f9654-b98b-49e0-a760-9456697b8b37", height="200"/>
+<img src="https://github.com/Tejas-gaikwad/bull_and_cow_game/assets/46574484/f157427c-1e02-4bac-8f8b-6a800fa354e7", height="200"/>
 
 
 
