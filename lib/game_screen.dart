@@ -25,8 +25,7 @@ class _GameScreenState extends State<GameScreen> {
 
   int generateRandom4DigitNumber() {
     Random random = Random();
-    return 1000 +
-        random.nextInt(9000); // Generates a random number between 1000 and 9999
+    return 1000 + random.nextInt(9000);
   }
 
   @override
